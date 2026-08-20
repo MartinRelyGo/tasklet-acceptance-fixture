@@ -3,18 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tasklet — a tiny task list</title>
-    <meta name="description" content="Tasklet is a minimal task list used as a disposable test application." />
+    <title data-i18n="appTitle">Tasklet — a tiny task list</title>
+    <meta
+      name="description"
+      data-i18n="pageDescription"
+      data-i18n-attr="content"
+      content="Tasklet is a minimal task list used as a disposable test application."
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main class="card">
-      <h1>Tasklet</h1>
-      <p id="summary" class="summary">Loading…</p>
+      <h1 data-i18n="heading">Tasklet Builder Test</h1>
+      <p id="summary" class="summary" data-i18n="loading">Loading…</p>
       <ul id="task-list" class="task-list"></ul>
       <form id="add-form" class="add-form">
-        <input id="new-task" name="title" placeholder="Add a task" autocomplete="off" required />
-        <button type="submit">Add</button>
+        <input
+          id="new-task"
+          name="title"
+          data-i18n="addPlaceholder"
+          data-i18n-attr="placeholder"
+          placeholder="Add a task"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" data-i18n="addButton">Add</button>
       </form>
     </main>
     <script src="/app.js"></script>
