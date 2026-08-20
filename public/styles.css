@@ -79,3 +79,9 @@ button {
   font: inherit;
   cursor: pointer;
 }
+
+.task-list li.empty {
+  color: var(--muted);
+  border-top: none;
+  padding: 0.5rem 0;
+}
