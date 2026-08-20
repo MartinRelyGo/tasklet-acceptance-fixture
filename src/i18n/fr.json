@@ -1,0 +1,9 @@
+{
+  "appTitle": "Tasklet — une petite liste de tâches",
+  "pageDescription": "Tasklet est une liste de tâches minimale utilisée comme application de test jetable.",
+  "heading": "Test de génération Tasklet",
+  "addPlaceholder": "Ajouter une tâche",
+  "addButton": "Ajouter",
+  "emptyState": "Aucune tâche pour l'instant. Ajoutez la première !",
+  "loading": "Chargement…"
+}
