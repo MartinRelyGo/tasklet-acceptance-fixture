@@ -6,6 +6,8 @@ import { startServer } from "../server.js";
 let server;
 let baseUrl;
 
+const AUTH_A = { Authorization: "Bearer token-a" };
+
 before(async () => {
   server = await startServer(0);
   const { port } = server.address();
@@ -23,7 +25,7 @@ test("homepage renders the app shell", async () => {
 });
 
 test("tasks API returns the seeded tasks and a summary", async () => {
-  const res = await fetch(`${baseUrl}/api/tasks`);
+  const res = await fetch(`${baseUrl}/api/tasks`, { headers: AUTH_A });
   const body = await res.json();
   assert.equal(res.status, 200);
   assert.ok(Array.isArray(body.tasks));
